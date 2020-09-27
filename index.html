@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Julie's Website </title>
+        <style>
+    body {
+        background: rgb(26, 26, 26);
+        color: rgb(255,255,255);
+        padding: 10px;
+        font-family: arial;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* navigation menu */
+    nav {
+        background: rgb(128,0,0);
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        padding: 10px;
+    }
+    h1 {
+        display: flex;
+        align-items: center;
+        color: white;
+        flex: 1;
+        margin: 0;
+    }
+    #nav-ul {
+        list-style-image: none;
+    }
+    .nav-li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: rgb(0,0,0);
+        display: flex;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+    }
+    .sidebar-img {
+        width: 200px;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    #interests {
+        border: 4px silver ridge;
+        padding: 8px;
+    }
+    h2, h3 {
+        margin: 0px;
+    }
+</style>
+    </head>
+
+    <body>
+    <!--All content goes here-->
+        <div id="all-contents">
+            <nav>
+                <h1>Julie's Website</h1>
+                 <ul id="nav-ul">
+                    <li class="nav-li">
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="portfolio.html"> Portfolio </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main>
+                <!--Sidebar Section-->
+                <div class="sidebar">
+                    <img class="sidebar-img" src="data:image/jpeg;base64,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">  
+                </div>             
+                <!--Content Section-->
+                <div class="content">
+                    <h2>Julie Blanchard</h2>
+                    <p>Student at Dutchtown High School</p>
+                    <!--Interests Section-->
+                    <div id="interests">
+                        <h3>Interests</h3>
+                        <u1>
+                            <li>Watching all Marvel Movies, especially the Iron Man movies</li>
+                            <li>Watching The Vampire Diaries</li>
+                            <li>Playing The Sims 4</li>
+                        </u1>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
