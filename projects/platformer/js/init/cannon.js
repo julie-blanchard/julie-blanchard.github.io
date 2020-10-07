@@ -22,14 +22,18 @@
      *      delay: OPTIONAL the number of milliseconds to wait before firing the first projectile
      */ 
     function init(game) {
-        let createCannon = cannon.create;
+        let createCannon = game.cannon.create;
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
         // example: 
         createCannon("top", 450);
         
-        
+        //myCannons
+        createCannon("left", 450);
+        createCannon("right", 200);
+        createCannon("top", 650);
+
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     };
