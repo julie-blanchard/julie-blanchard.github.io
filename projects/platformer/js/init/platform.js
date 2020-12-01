@@ -24,7 +24,8 @@
      *              stretch the platform in height.
      */ 
     function init(game) {
-        let createPlatform = game.platform.create;
+        let createPlatform = platform.create;
+
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
@@ -34,19 +35,20 @@
          * bottom of the game.
          */
         createPlatform(0, game.world.height - 32, 3, 2);    // DO NOT DELETE
-        
+
         // example:
-        createPlatform(400, 250);
-        createPlatform(170, 460, 0.5);
+        createPlatform(400, 200, 0.5);
+        createPlatform(170, 470, 0.5);
         
-        //myPlatforms
-        createPlatform(400, 500, 0.2);
+          //myPlatforms
+        createPlatform(400, 600, 0.4);
         createPlatform(200, 100, 0.3);
         createPlatform(300, 300, 0.4);
-        createPlatform(600, 750, 0.5);
-        
+        createPlatform(550, 500, 0.7);
+        createPlatform(50, 200, 0.4);
+
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     }
     platform.init = init;
-} )(window);
+})(window);
